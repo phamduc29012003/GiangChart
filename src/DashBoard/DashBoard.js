@@ -1,8 +1,8 @@
 import { Chart as ChartJS } from "chart.js/auto";
 import { Line } from "react-chartjs-2";
 import { FaTemperatureHigh } from "react-icons/fa6";
-import revenueData from "./data/revenueData.json";
-import sourceData from "./data/sourceData.json";
+import revenueData from "../data/revenueData.json";
+import sourceData from "../data/sourceData.json";
 import { WiHumidity } from "react-icons/wi";
 import { CiLight } from "react-icons/ci";
 import React from "react";
@@ -10,11 +10,18 @@ import { Switch } from "antd";
 import { PiFanFill } from "react-icons/pi";
 import { useState, useEffect } from "react";
 import { FaLightbulb } from "react-icons/fa";
-
-function App() {
+import Swal from "sweetalert2";
+const DashBoard = () => {
+  const [temp, setTemp] = useState(101);
   const [active, setActive] = useState(false);
   const [light, setLight] = useState(false);
-
+  if (temp > 100) {
+    Swal.fire({
+      title: "Warning",
+      text: "The temperature is too high",
+      icon: "warning",
+    });
+  }
   const onclick = () => {
     setActive((prevActive) => !prevActive);
   };
@@ -26,7 +33,7 @@ function App() {
     <div className="App">
       <div className="dataCard degree bg-degree center-item">
         <div className="font-size center-item ">
-          50°C <FaTemperatureHigh />
+          {`${temp}`}°C <FaTemperatureHigh />
         </div>
       </div>
       <div className="dataCard humid center-item bg-humid">
@@ -94,6 +101,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
-export default App;
+export default DashBoard;
