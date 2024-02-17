@@ -12,16 +12,18 @@ import { useState, useEffect } from "react";
 import { FaLightbulb } from "react-icons/fa";
 import Swal from "sweetalert2";
 const DashBoard = () => {
-  const [temp, setTemp] = useState(101);
+  const temp = 101;
   const [active, setActive] = useState(false);
   const [light, setLight] = useState(false);
-  if (temp > 100) {
-    Swal.fire({
-      title: "Warning",
-      text: "The temperature is too high",
-      icon: "warning",
-    });
-  }
+  useEffect(() => {
+    if (temp > 100) {
+      Swal.fire({
+        title: "Warning",
+        text: "The temperature is too high",
+        icon: "warning",
+      });
+    }
+  }, [temp]);
   const onclick = () => {
     setActive((prevActive) => !prevActive);
   };
