@@ -1,8 +1,8 @@
 import historyData from "../data/history.json";
-console.log(historyData);
+import HistorySearch from "../Component/HistorySearch";
 const History = () => {
   return (
-    <div className="w-full bg-[#ddd] flex justify-center items-center pt-12">
+    <div className="w-full h-screen bg-[#ddd] flex justify-center items-center">
       <table className="">
         <thead className="bg-blue-400">
           <tr>

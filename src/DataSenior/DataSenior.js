@@ -1,5 +1,3 @@
-import Item from "antd/es/list/Item";
-import Search from "../Component/Search";
 import SeniorData from "../data/dataSenior.json";
 import { useState } from "react";
 const DataSenior = () => {

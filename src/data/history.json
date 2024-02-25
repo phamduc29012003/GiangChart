@@ -34,23 +34,5 @@
         "type": "Fan",
         "activity": "ON",
         "time": "11-01-2024"
-      },
-      {
-        "stt": 6,
-        "type": "Fan",
-        "activity": "ON",
-        "time": "11-01-2024"
-      },
-      {
-        "stt": 7,
-        "type": "Fan",
-        "activity": "ON",
-        "time": "11-01-2024"
-      },
-      {
-        "stt": 8,
-        "type": "Fan",
-        "activity": "ON",
-        "time": "11-01-2024"
       }
   ]

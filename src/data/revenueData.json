@@ -1,74 +1,74 @@
 [
     {
-      "label": "Jan",
-      "revenue": 64854,
-      "cost": 32652,
-      "price": 30231
+      "label": "1 PM",
+      "revenue": 64,
+      "cost": 32,
+      "price": 30
     },
     {
-      "label": "Feb",
-      "revenue": 54628,
-      "cost": 42393,
-      "price": 31231
+      "label": "2 PM",
+      "revenue": 54,
+      "cost": 42,
+      "price": 31
     },
     {
-      "label": "Mar",
-      "revenue": 117238,
-      "cost": 50262,
-      "price": 40231
+      "label": "3 PM",
+      "revenue": 11,
+      "cost": 50,
+      "price": 40
     },
     {
-      "label": "Apr",
-      "revenue": 82830,
-      "cost": 64731,
-      "price": 50231
+      "label": "4 PM",
+      "revenue": 82,
+      "cost": 64,
+      "price": 50
     },
     {
-      "label": "May",
-      "revenue": 91208,
-      "cost": 41893,
-      "price": 30231
+      "label": "5 PM",
+      "revenue": 91,
+      "cost": 41,
+      "price": 30
     },
     {
-      "label": "Jun",
-      "revenue": 103609,
-      "cost": 83809,
-      "price": 70231
+      "label": "6 PM",
+      "revenue": 10,
+      "cost": 83,
+      "price": 70
     },
     {
-      "label": "Jul",
-      "revenue": 90974,
-      "cost": 44772,
-      "price": 40231
+      "label": "7 PM",
+      "revenue": 90,
+      "cost": 44,
+      "price": 40
     },
     {
-      "label": "Aug",
-      "revenue": 82919,
-      "cost": 37590,
-      "price": 30231
+      "label": "8 PM",
+      "revenue": 82,
+      "cost": 37,
+      "price": 30
     },
     {
-      "label": "Sep",
-      "revenue": 62407,
-      "cost": 43349,
-      "price": 60231
+      "label": "9 PM",
+      "revenue": 62,
+      "cost": 43,
+      "price": 60
     },
     {
-      "label": "Oct",
-      "revenue": 82528,
-      "cost": 45324,
-      "price": 70231
+      "label": "10 PM",
+      "revenue": 82,
+      "cost": 45,
+      "price": 70
     },
     {
-      "label": "Nov",
-      "revenue": 56979,
-      "cost": 47978,
-      "price": 75231
+      "label": "11 PM",
+      "revenue": 56,
+      "cost": 47,
+      "price": 75
     },
     {
-      "label": "Dec",
-      "revenue": 87436,
-      "cost": 39175,
-      "price": 80231
+      "label": "12 PM",
+      "revenue": 87,
+      "cost": 39,
+      "price": 80
     }
   ]

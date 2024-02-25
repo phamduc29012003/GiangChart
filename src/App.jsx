@@ -11,13 +11,16 @@ import Profile from './Profile/Profile';
 import Header from "./Layout/Header";
 function App() {
  return (
-  <div className="h-screen bg-[#ddd]">
+  <div className="h-screen">
   <Header />
   <Routes>
        <Route path="*" element={<DashBoard />} />
        <Route path="/data-senior" element={<DataSenior />} />
        <Route path="/history" element={<History />} />
        <Route path="/profile" element={<Profile />} />
+
+
+
   </Routes>
   </div>
  )
