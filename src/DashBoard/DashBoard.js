@@ -18,21 +18,26 @@ const DashBoard = () => {
   const [active, setActive] = useState(false);
   const [light, setLight] = useState(false);
   const [humid, setHumid] = useState("");
-  const [data, setData] = useState("");
+  const [data, setData] = useState(null);
   const [bri, setBri] = useState("");
   useEffect(() => {
     setData(DataSenior);
-    const interval = setInterval(() => {
-      setTemp();
-    }, 3000);
+    if (data) {
+      const interval = setInterval(() => {
+        setTemp(data[Math.floor(Math.random() * data.length)].temp);
+        setHumid(data[Math.floor(Math.random() * data.length)].humid);
+        setBri(data[Math.floor(Math.random() * data.length)].light);
+      }, 3000);
+      return () => clearInterval(interval);
+    }
   });
+  console.log();
   const onclick = () => {
     setActive((prevActive) => !prevActive);
   };
   const handleLamp = () => {
     setLight((prevLight) => !prevLight);
   };
-  console.log(temp);
   const getGradientColor = (value, minValue, maxValue, color1, color2) => {
     const percent = (value - minValue) / (maxValue - minValue);
     const red = Math.round(color1[0] + percent * (color2[0] - color1[0]));

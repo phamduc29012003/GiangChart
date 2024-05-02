@@ -1,4 +1,4 @@
-const HistorySearch = () => {
+const HistorySearch = ({ onchange }) => {
   return (
     <>
       <form class="max-w-lg mx-auto">
@@ -13,7 +13,7 @@ const HistorySearch = () => {
             class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-gray-300 rounded-s-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:text-white dark:border-gray-600"
             type="button"
           >
-            Temp
+            STT
             <svg
               class="w-2.5 h-2.5 ms-2.5"
               aria-hidden="true"
@@ -43,7 +43,7 @@ const HistorySearch = () => {
                   type="button"
                   class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                 >
-                  Temp
+                  id
                 </button>
               </li>
               <li>
@@ -66,6 +66,7 @@ const HistorySearch = () => {
           </div>
           <div class="relative w-full">
             <input
+              onChange={onchange}
               type="search"
               id="search-dropdown"
               class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-e-lg border-s-gray-50 border-s-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-s-gray-700  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500"
